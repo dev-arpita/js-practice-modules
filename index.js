@@ -1,21 +1,22 @@
-// Create a person object that contains three keys: name, age, and county.
-// Use yourself as an example to set the values for name, age, and country
+let age = 67
 
-// Create a function, logData(), that uses the person object to create a
-// string in the following format:
-// "Per is 35 years old and lives in Norway"
+// less than 6 years old -> free
+// 6 to 17 years old     -> child discount
+// 18 to 26 years old    -> student discount
+// 27 to 66 years old    -> full price
+// over 66 years old     -> senior citizen discount
 
-// Call the logData() function to verify that it works
+// Create a conditional statement (if/else/else if) that logs out the discount
+// the passenger will get based upon the value of the age variable
 
-let person = {
-    name    : "Arpita",
-    age     : 26,
-    country : "India"
+if (age <= 5) {
+    console.log("free")
+} else if (age <= 17) {
+    console.log("child discount")
+} else if (age <= 26) {
+    console.log("student discount")
+} else if (age <= 66) {
+    console.log("full price")
+} else {
+    console.log("senior citizen discount")
 }
-// console.log(person)
-
-function logData() {
-    let personData = person.name + " " + "is" + " " + person.age + " " + "years old and lives in" + " " + person.country
-    return personData
-}
-console.log(logData())
