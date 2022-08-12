@@ -1,16 +1,9 @@
-let largeCountries = ["Tuvalu","India","USA","Indonesia","Monaco"]
+let dayOfMonth = 13
+let weekday = "Friday"
 
-// You need to help me fixup the largeCountries array so that
-// China and Pakistan are added back into their respective places
+// If it is Friday the 13th, log out this spooky face: 😱
+// Use the logical "AND operator" -> &&
 
-// Use push() & pop() and their counterparts unshift() & shift()
-// Google how to use unshift() and shift()
-
-largeCountries.shift() //remove the array itms fron the begining
-console.log(largeCountries)
-largeCountries.unshift("China")// add array item at the begining
-console.log(largeCountries)
-largeCountries.pop()   //remove the array itms fron the end
-console.log(largeCountries)
-largeCountries.push("Pakistan")// add array item at the end
-console.log(largeCountries)
+if (dayOfMonth === 13 && weekday === "Friday") {
+    console.log("😱")
+}
